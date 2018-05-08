@@ -10,11 +10,13 @@ const API_KEY ='AIzaSyBRhtCxGt3IxdlEX0KHT0KM5P5Abevys9g';
 class App extends Component{
     constructor(props){
         super(props);
-        this.state = {videos: []};
-        YTSearch({Key: API_KEY,term: 'vijay'},(videos) =>{
+        this.state = { videos: [] };
+      
+        YTSearch({key: API_KEY, term: 'Parithabangal'}, (videos) => {
             this.setState({ videos });
             //this.setState({ videos : videos});
             });
+            
     }
 
     render(){
